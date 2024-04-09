@@ -1,20 +1,23 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: system-ui;
 }
-.active{
+
+.active {
     background-color: white;
     color: black;
 }
-.container{
+
+.container {
     background-color: black;
     height: 100vh;
     overflow: hidden;
     position: relative;
     transition: 0.5s;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,46 +26,55 @@ nav{
     margin-top: 15px;
     margin-bottom: 20px;
 }
-.logo{
+
+.logo {
     width: 40px;
 }
-ul li{
+
+ul li {
     display: inline-block;
     list-style: none;
     border-radius: 15px;
 }
-ul li a{
+
+ul li a {
     text-decoration: none;
     color: white;
     margin: 0 15px;
     padding: 4px 5px;
     border-radius: 15px;
 }
-ul li a:hover{
+
+ul li a:hover {
     background-color: white;
     transition: 0.3s;
     color: black;
 }
-.content{
+
+.content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 80%;
     margin: auto;
 }
-.content .text{
+
+.content .text {
     width: 40%;
     color: white;
 }
-.content .text h2{
+
+.content .text h2 {
     font-size: 40px;
     text-transform: uppercase;
 }
-.content .text p{
+
+.content .text p {
     font-size: 18px;
     margin: 20px 0;
 }
-.content .text .btn{
+
+.content .text .btn {
     text-decoration: none;
     background-color: white;
     color: black;
@@ -72,23 +84,107 @@ ul li a:hover{
     font-size: 15px;
     cursor: pointer;
 }
-.content .image{
- width: 30%;
+
+.content .image {
+    width: 30%;
 }
-.content .image img{
+
+.content .image img {
     width: 180px;
 }
-.icons{
+
+.icons {
     position: absolute;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     cursor: pointer;
 }
-.icons img{
+
+.icons img {
     width: 50px;
     transition: 0.5s;
 }
-.icons img:hover{
+
+.icons img:hover {
     transform: scale(1.2);
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .logo {
+        width: 30px;
+    }
+
+    ul {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: black;
+        width: 100%;
+        text-align: center;
+        transition: 0.5s;
+    }
+
+    ul.active {
+        display: block;
+    }
+
+    ul li {
+        display: block;
+        list-style: none;
+        border-radius: 15px;
+        margin: 10px 0;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 4px 5px;
+        border-radius: 15px;
+    }
+
+    .content {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .content .text {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .content .text h2 {
+        font-size: 30px;
+    }
+
+    .content .text p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .content .text .btn {
+        width: 100%;
+    }
+
+    .content .image {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .icons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .icons img {
+        width: 40px;
+        margin: 0 5px;
+    }
 }

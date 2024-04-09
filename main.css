@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: system-ui;
+}
+.active{
+    background-color: white;
+    color: black;
+}
+.container{
+    background-color: black;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    transition: 0.5s;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.logo{
+    width: 40px;
+}
+ul li{
+    display: inline-block;
+    list-style: none;
+    border-radius: 15px;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    padding: 4px 5px;
+    border-radius: 15px;
+}
+ul li a:hover{
+    background-color: white;
+    transition: 0.3s;
+    color: black;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+.content .text{
+    width: 40%;
+    color: white;
+}
+.content .text h2{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.content .text p{
+    font-size: 18px;
+    margin: 20px 0;
+}
+.content .text .btn{
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+.content .image{
+ width: 30%;
+}
+.content .image img{
+    width: 180px;
+}
+.icons{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+.icons img{
+    width: 50px;
+    transition: 0.5s;
+}
+.icons img:hover{
+    transform: scale(1.2);
+}
